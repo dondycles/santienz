@@ -1,11 +1,9 @@
-// src/routes/__root.tsx
 import type { ReactNode } from "react"
 import {
 	Outlet,
 	createRootRoute,
 	HeadContent,
 	Scripts,
-	ScriptOnce,
 } from "@tanstack/react-router"
 
 import appCss from "@/lib/app.css?url"
@@ -49,12 +47,6 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
 				<HeadContent />
 			</head>
 			<body className="poppins bg-background text-foreground text-lg antialiased">
-				<ScriptOnce>
-					{`document.documentElement.classList.toggle(
-            'dark',
-            localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-            )`}
-				</ScriptOnce>
 				{children}
 				<Scripts />
 			</body>

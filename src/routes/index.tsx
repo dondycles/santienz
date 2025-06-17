@@ -1,7 +1,6 @@
 // src/routes/index.tsx
 import { createFileRoute } from "@tanstack/react-router"
 import { Button } from "@/components/ui/button"
-import ThemeToggle from "@/components/theme-toggle"
 import Header from "@/components/header"
 import { Badge } from "@/components/ui/badge"
 import { Medal, Users } from "lucide-react"
@@ -199,7 +198,6 @@ function Home() {
 					/>
 				</section>
 			</main>
-			<ThemeToggle />
 		</div>
 	)
 }
