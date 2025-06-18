@@ -117,7 +117,7 @@ export default function Header() {
 							</NavigationMenuItem>
 						</NavigationMenuList>
 					</NavigationMenu>
-					<Button>Contact Us</Button>
+					<Button>Get Quote</Button>
 				</div>
 				<Sheet>
 					<SheetTrigger className="xmd:hidden">
